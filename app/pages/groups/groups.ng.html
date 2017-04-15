@@ -1,0 +1,14 @@
+<ActionBar title="Groceries">
+  <ActionItem text="Share" android.systemIcon="ic_menu_share_holo_dark" ios.systemIcon="9" ios.position="right"></ActionItem>
+</ActionBar>
+
+<GridLayout rows="auto, *">
+
+  <GridLayout row="0" columns="*, auto" class="add-bar">
+    <TextField #groceryTextField hint="Enter a grocery item" col="0"></TextField>
+  </GridLayout>
+
+  <ActivityIndicator [busy]="true" [visibility]="'visible'" row="1" horizontalAlignment="center"
+    verticalAlignment="center"></ActivityIndicator>
+
+</GridLayout>
